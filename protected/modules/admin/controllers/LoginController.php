@@ -11,7 +11,7 @@ class LoginController extends AdminController{
             $form->attributes = $data;
 
             if ($form->validate()) {
-                UserUtil::getAdminWebUser()->setFlash(Constants::SUCCESS_MESSAGE_ID, 'Login efetuado com sucesso.');
+                UserUtil::getAdminWebUser()->setFlash(Constants::SUCCESS_MESSAGE_ID, 'Login successful!');
                 $this->redirect(array('/admin'));
             }
         }
